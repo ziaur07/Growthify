@@ -5,13 +5,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Business Website</title>
+    <title>Growthify</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="{% static 'SMMA/styles.css' %}" rel="stylesheet">
     <script src="{% static 'SMMA/script.js' %}"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
+
+<!-- navbar -->
+
+<section id="navabr">
+
 <body>
     <div class="navbar">
         <a href="#home">Projects</a>
@@ -24,12 +30,31 @@
         <img class="logo"  src="{% static 'SMMA/Logo.png' %}" alt="Logo">
     </div>
     <h3>Welcome to Growthify</h3>
+
+</section>
+
+<!-- embedded vid -->
+
+<section id="video">
+
+    <div class="about">
+        <p>
+            we are a makreting agency here to enhance your reach in the digital world. We offer a variety of services to
+             help you grow your business..........
+        </p>
+    </div>
     <div class="container">
         <video controls class="vid">
-            <source src="{% static 'SMMA/sampleVideo.mp4' %}" type="video/mp4">
+            <source src="{% static 'SMMA/video2.mp4' %}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
+</section>
+
+<!-- tetstimonials-->
+
+<section id="testimonials"></section>
+    <h3>Testimonials </h3>
     <div class="testimonial-carousel">
     {% for testimonial in testimonials %}
         <div class="testimonial-card">
@@ -41,6 +66,86 @@
         </div>
     {% endfor %}
     </div>
+</section>
+
+<!-- services -->
+
+ <h2> our services</h2>
+
+<section id="services" >
+ 
+    <div class="service-cards">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card 
+            title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">buy now </a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card
+             title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">buy now </a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card
+             title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">buy now</a>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+<!-- Faqs -->
+<div class="more">
+<h1>GOT MORE QUESTIONS?</h1>
+<h4> feel free to contact us</h4>
+</div>
+
+<div class="faq-container">
+
+
+<section id="faqs">
+  <div class="faq">
+      <h3 class="faq-question">Question 1?</h3>
+      <p class="faq-answer">Answer to question 1.</p>
+  </div>
+  <div class="faq">
+      <h3 class="faq-question">Question 2?</h3>
+      <p class="faq-answer">Answer to question 2.</p>
+  </div>
+  <div class="faq">
+    <h3 class="faq-question">Question 3?</h3>
+    <p class="faq-answer">Answer to question 3.</p>
+</div>
+<div class="faq">
+  <h3 class="faq-question">Question 4?</h3>
+  <p class="faq-answer">Answer to question 4.</p>
+</div>
+<div class="faq">
+  <h3 class="faq-question">Question 5?</h3>
+  <p class="faq-answer">Answer to question 5.</p>
+</div>
+ 
+</section>
+</div>
+<footer>
+  <p>Growthify</p>
+  <p>dhaka</p>
+  <p>Socials: <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">LinkedIn</a></p>
+  <p>Developed by: ziaur rahman zia</p>
+</footer>
+
 </body>
 </html>
 
