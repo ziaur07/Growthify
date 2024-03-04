@@ -13,6 +13,22 @@
     top: 0;
     right: 0;
     margin: 20px;
+
+
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-image: 
+    radial-gradient(circle at center, rgba(255, 255, 255, 0.005), rgba(255, 255, 255, 0.005) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+    
+    background-size: 300px 
+    fixed;
+    background-attachment: fixed;
+    background-color: #1d1d1d; 
+    color: #F8F8F8;
+
 }
 
 .testimonial-card{
@@ -67,13 +83,17 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333;
+    background-color:#1d1d1d;
     padding: 10px;
     margin: 20px;
 }
@@ -83,6 +103,7 @@ h3 {
     text-decoration: none;
     margin-right: 10px;
     margin: 20px;
+ 
 }
 
 .container {
@@ -111,6 +132,12 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(to right, red, blue) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+ 
+    
 }
 
 #test {
@@ -205,6 +232,11 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .faq {
     border: 1px solid #000;
@@ -236,14 +268,14 @@ h2 {
 }
 
 footer {
-    background-color: #f8f9fa;
+    background-color:  #1d1d1d; 
     padding: 20px;
     text-align: center;
     position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
-    border-top: 1px solid #000; /* Add this line */
+    border-top: 1px solid #f8f5f5; /* Add this line */
 }
 
 
@@ -258,19 +290,22 @@ footer {
 
 .spacing {
     margin-right: 20px;
+    display: inline-block;
+    background: linear-gradient(to right, red, blue);
+    border: 2px solid rgb(36, 36, 36);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+.spacing:hover {
+    background-position: right;
 }
 
-
-.card3 {
-    border: 1px solid #ddd; /* Add a border */
-    border-radius: 5px; /* Add rounded corners */
-    padding: 15px; /* Add some padding */
-    margin: 15px auto; /* Add some margin and center the card */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow */
-    display: block; /* Add this line */
-    width: 20%; /* Increase the width */
-    height: 500px; 
-}
 
 
 .card2 h1, .card h2 {
@@ -312,4 +347,37 @@ section {
 
 html {
     scroll-behavior: smooth;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 45%;
+}
+
+.right {
+    display: block;
+    margin-left: auto;
+    width: 40%; /* adjust as needed */
+}
+
+.card-text2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 80px;
+    font-size: 21px;
 }
