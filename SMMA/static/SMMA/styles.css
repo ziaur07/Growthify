@@ -5,7 +5,7 @@
     text-align: center;
     text-decoration: none;
     background-color: #013126c5;
-    color: white;
+   
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -13,12 +13,13 @@
     top: 0;
     right: 0;
     margin: 20px;
+    color: rgb(223, 216, 216);
 
 
 }
 
 body{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-image: 
     radial-gradient(circle at center, rgba(255, 255, 255, 0.005), rgba(255, 255, 255, 0.005) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
@@ -26,7 +27,7 @@ body{
     background-size: 300px 
     fixed;
     background-attachment: fixed;
-    background-color: #1d1d1d; 
+    background-color: #131212; 
     color: #F8F8F8;
 
 }
@@ -80,30 +81,38 @@ body{
 
 h3 {
     display: flex;
-    flex-direction: column;
+   
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    background: linear-gradient(to right, red, blue);
+    background: linear-gradient(to right, blue, green); ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  
+  
 }
 
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
-    background-color:#1d1d1d;
+    background-color: #131212;
     padding: 10px;
     margin: 20px;
 }
 
 .navbar a {
-    color: white;
+    color: rgb(223, 216, 216);
     text-decoration: none;
     margin-right: 10px;
     margin: 20px;
+    transition: color 0.5s ease;
  
+}
+
+.navbar a:hover {
+    background: linear-gradient(45deg, rgb(0, 255, 200), rgb(0, 255, 106));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .container {
@@ -114,7 +123,6 @@ h3 {
 .vid {
     width: 100%; /* Adjust as needed */
     height: auto;
-    margin-top: 300px
 }
 
 .testimonial-image {
@@ -135,6 +143,7 @@ h2 {
     background: linear-gradient(to right, red, blue) ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+ 
     
  
     
@@ -165,6 +174,7 @@ h2 {
     bottom: 10px !important;
     right: 10px !important;
     margin: 10px;
+    color: #808080;
 }
 
 .about{
@@ -193,8 +203,17 @@ h2 {
     border: 2px solid #808080;
     height: 300px;
     width : 400px !important;
-  
+    background-color:   #131212; 
+    transition: transform 0.3s ease-in-out; /* Add this line */
+;
+    
 }
+.card:hover {
+    transform: translateY(-10px);
+ 
+   
+}
+
 
 .card2{
     height: 400px;
@@ -217,7 +236,11 @@ h2 {
     padding: 25px  !important;
     border-radius: 15px  !important;
     border: 2px solid #808080  !important;
+    transition: transform 0.3s ease-in-out; /* Add this line */
 
+}
+.card4:hover {
+    transform: translateY(-10px); /* Add this block */
 }
 
 .service-cards{
@@ -228,18 +251,21 @@ h2 {
     
 }
 
+
+
+
 .h1{
     display: flex;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to right, red, blue);
+    background: linear-gradient(to right, blue, green);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .faq {
-    border: 1px solid #000;
+    border: 1px solid #333333;
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
@@ -248,11 +274,14 @@ h2 {
 
 .faq-question {
     cursor: pointer;
+    text-align: left !important;
 }
 
 .faq-answer {
     display: none;
-    text-align: center;
+    text-align: left;
+    font-size: smaller;
+    line-height: 1.75rem;
 }
 
 .faq-container {
@@ -288,22 +317,36 @@ footer {
     padding: 20px;
 }
 
+.bi {
+    font-size: 24px; /* Adjust the size of the icons */
+    color: rgb(223, 216, 216); /* Set the color of the icons */
+    margin: 0 10px; /* Add some space between the icons */
+    transition: color 0.5s ease; /* Smooth transition */
+    /* Adjust as needed */
+}
+
+.bi:hover {
+    color: #00ffbf; /* Change the color on hover */
+}
+
 .spacing {
     margin-right: 20px;
     display: inline-block;
-    background: linear-gradient(to right, red, blue);
+    border-radius: 10px;
     border: 2px solid rgb(36, 36, 36);
     color: white;
     text-align: center;
-    text-decoration: none;
     transition: 0.5s;
+    box-shadow: 0px 0px 10px 0px rgba(51, 105, 92, 0.75);
+ 
     cursor: pointer;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    background: linear-gradient(to right, #1d1d1d 50%, rgb(67, 128, 99) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
 }
 .spacing:hover {
-    background-position: right;
+    background-position: left bottom;
 }
 
 
@@ -324,6 +367,13 @@ footer {
     font-weight: bold !important;;
     margin-bottom:  10px !important;
 }
+.card2{
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  .card2:hover {
+    transform: translateY(-10px); /* Add this block */
+}
 
 .start{
     display: flex;
@@ -342,11 +392,14 @@ section {
 .button-container {
     display: flex;
     justify-content: center;
+    margin-top: 80px;
+
 }
 
 
 html {
     scroll-behavior: smooth;
+    cursor: none;
 }
 
 .cards-container {
@@ -380,4 +433,204 @@ html {
     padding: 20px;
     margin-top: 80px;
     font-size: 21px;
+    color: #808080;
 }
+
+
+.service-cards2, .cardg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex: 1 0 auto; /* Add this line to both classes */
+     /* Add this line to .service-cards2 */
+  
+}
+
+.cardg{
+    border: 1px solid #f8f5f5;
+    font-size: 15px;
+    width: 200px; /* Set a specific width */
+    height: 300px; /* Set a specific height */
+    overflow: auto;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+.cardg:hover {
+    background-color: rgb(89, 151, 113); /* Replace #yourHoverColor with your desired hover color */
+  }
+
+.gradient-text {
+    background: linear-gradient(45deg, rgb(0, 255, 200), rgb(0, 255, 106));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.promise{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+    font-size: 21px;
+    background: linear-gradient(45deg, rgb(0, 255, 200), rgb(0, 255, 106));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  
+    font-size: 21px;
+    background: linear-gradient(45deg, rgb(0, 238, 186), rgb(9, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+.home2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+   
+    font-size: 21px;
+    background: linear-gradient(45deg, rgb(0, 255, 200), rgb(0, 255, 106));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+
+.pcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 80px;
+    font-size: 21px;
+    color: #ececec;
+}
+
+
+.Socials{
+    margin-top: 10px;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+.cursor {
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #f44336;
+  position: fixed;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+.cursor__follower {
+  transition: transform .4s;
+  width: 6px;
+  height: 6px;
+  z-index: 9998;
+  position: fixed;
+}
+
+h4{
+    color: #808080;
+}
+  
+.para{
+    font-size: smaller;
+}
+
+
+.most-recommended {
+    display: block;
+    width: 100px;
+    height: 30px;
+    background-color: #921100;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 5px 0 0 5px;
+    position: absolute;
+    top: 0%; /* Adjust this value to move the element up/down */
+    left: 0%;
+ 
+  }
+
+  .btn{
+    color: #808080;
+    background-color: #131313;
+    border: 2px solid #808080;;
+  }
+
+  .btn:hover {
+    background-color: gray;/* Change this to your desired hover color */
+  }
+
+.arrow{
+    text-align: right;
+}
+
+
+
+@keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .show-items {
+    animation: slideUp 4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  }
+
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .show-items-left {
+    animation: slideInLeft 3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  }
+  
+  .show-items-right {
+    animation: slideInRight 3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  }
