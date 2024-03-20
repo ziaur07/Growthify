@@ -24,63 +24,52 @@
 <!-- navbar -->
 
 <section id="navabr">
-
- 
-
 <body>
+  
+  <div class="logo">
+    <img class="logo"  src="{% static 'SMMA/Logo.png' %}" alt="Logo">
+  </div>
  
-
-
     <div class="navbar">
         <a href="#navabr">Home</a>
         <a href="#services">Services</a>
         <a href="#faqs">Faq</a>
     </div>
-
-    <a href="https://forms.gle/ATnUNz8oq13gEbzw9" class="button">book a meeting</a>
-    <div class="logo">
-        <img class="logo"  src="{% static 'SMMA/Logo.png' %}" alt="Logo">
+    <div class="hcontainers">
+      <a href="https://forms.gle/ATnUNz8oq13gEbzw9" class="button">book a meeting</a>
+      <h4 class="home2">UNLOCK the full potential of social media</h4>
+      <h1 class="home"><span class="gradient-text">Grow</span>&nbsp;Your&nbsp;<span class="gradient-text">Business&nbsp;</span> With Us</h1>
     </div>
-   
-    <p class="home"><span class="gradient-text">Grow</span>&nbsp;Your&nbsp;<span class="gradient-text">Business&nbsp;</span> With Us</p>
-    <p class="home2">UNLOCK the full potential of social media</p>
-    <p class="promise">With our expertise, we're dedicated to securing your ROI and 2X your revenue in less than 5months.</p>
-
-
-
-
-
+    <div class="svg-container">
+      <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 80 Q 95 10 180 80" stroke="#69b390" stroke-width="3" fill="transparent" />
+      </svg>
+    </div>
+    <h6 class="promise">With our expertise, we're dedicated to securing your ROI and 2X your revenue in less than 5months.</h6>
+  
+    <div class="hook">
+      <a href="#services"><button class="spacing"> View pricing</button></a>
+      <a href="#getStarted"><button class="spacing"> Get started !</button></a>
+    </div>
+    <div class="Socials">
+      <a href="https://www.instagram.com/naim_mustakim82" target="_blank">
+      <i class="bi bi-instagram"></i>
+     </a>
+      <a href="https://www.linkedin.com/in/yourusername" target="_blank">
+      <i class="bi bi-linkedin"></i>
+      </a>
+    </div>
+</div>
 
 <!-- embedded vid -->
 
 <section id="video" class="animate">
-  
-
-
-  <div class="Socials">
-    <a href="https://www.instagram.com/naim_mustakim82" target="_blank">
-      <i class="bi bi-instagram"></i>
-  </a>
-  <a href="https://www.linkedin.com/in/yourusername" target="_blank">
-      <i class="bi bi-linkedin"></i>
-  </a>
-    </div>
-    <div class="hook">
-
-      <a href="#services"><button class="spacing"> View pricing</button></a>
-      <a href="#getStarted"><button class="spacing"> Get started !</button></a>
-
-    </div>
-
-
     <div class="container">
         <video controls class="vid">
             <source src="{% static 'SMMA/video2.mp4' %}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
-
-
 </section>
 
 
@@ -95,26 +84,36 @@
     <div class="card-row">
         <div class="card" style="width: 18rem;">
             <div class="card-body">
+              <h1 class="money">
+                $52,1900
+              </h1>
                 <p class="card-text2">total known sales reported:
-                  $52,1900
+                 
                   </p>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
+          <h1 class="money">
+            43%
+          </h1>
             <div class="card-body">
-                <p class="card-text2">43% of our new members have closed deals within their first 30 days with us.</p>
+                <p class="card-text2"> of our new members have closed deals within their first 30 days with us.</p>
             </div>
         </div>
     </div>
     <div class="card-row">
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-                <p class="card-text2">$5,500 Average Monthly Revenue per Growth Partner</p>
+              <h1 class="money">
+                $5,500
+              </h1>
+                <p class="card-text2"> Average Monthly Revenue per Growth Partner</p>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-                <p class="card-text2">Average Sales Value Secured by Our Growth Partners: $23,250</p>
+              <h1 class="money">$23,250</h1>
+                <p class="card-text2">Average Sales Value Secured by Our Growth Partners: </p>
             </div>
         </div>
     </div>
@@ -130,7 +129,7 @@
 
 
   <div class="left">
-    <h4>1.Discovery Call</h4>
+    <h4 class="discovery">1.Discovery Call</h4>
     <p class="para">
       Our process starts with a free discovery call.
        Here we gather valuable insights on your business, target niche ,<br>
@@ -138,7 +137,7 @@
     </p>
   </div>
   <div class="left">
-    <h4>2.Strategy session </h4>
+    <h4 class="discovery">2.Strategy session </h4>
     <p class="para">
       Here we conduct a small Audit and offer personalized feedback on the key
        indicators that is potentially affecting<br> your reach .
@@ -148,7 +147,7 @@
     </p>
   </div>
   <div class="left">
-    <h4>3.Building a Funnel/System </h4>
+    <h4 class="discovery">3.Building a Funnel/System </h4>
     <p class="para">
       In the following step, we will create high-converting funnels
        that easily guide potential customers from awareness<br> to action.
@@ -161,7 +160,7 @@
 
 
   <div class="right">
-    <h4>4.Automation </h4>
+    <h4 class="discovery">4.Automation </h4>
     <p class="para">
       We use smart automation tools to handle repetitive tasks, schedule posts, and
        optimize campaigns.This<br> is how you will get more time on customer nurturing ,
@@ -169,7 +168,7 @@
     </p>
   </div>
   <div class="right">
-    <h4>5.Optimization  </h4>
+    <h4 class="discovery">5.Optimization  </h4>
     <p class="para">
       We constantly monitor KPI and use those insights to work on your projects and take your business to the next level. This 
       is how your brand reaches the right audience with engaging content,
@@ -184,7 +183,7 @@
 <!-- tetstimonials-->
 
 <section id="testimonials"></section>
-    <h2>Testimonials </h2>
+    <h2 class="norm">Testimonials </h2>
     <div class="testimonial-carousel">
     {% for testimonial in testimonials %}
         <div class="testimonial-card">
@@ -200,7 +199,7 @@
 
 <!-- services -->
 
- <h2> our services</h2>
+ <h2 class="norm"> our services</h2>
 
 <section id="services" class="animate" >
  
@@ -271,7 +270,7 @@
 
 <!-- difference-->
 <section>
-  <h2>What makes us different ?</h2>
+  <h2 class="norm" >What makes us different ?</h2>
   <div class="service-cards2">
     <div class="cardg" style="width: 18rem;">
       <div class="card-body">

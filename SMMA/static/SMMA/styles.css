@@ -6,17 +6,20 @@
     text-decoration: none;
     background-color: #013126c5;
    
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
     position: absolute;
     top: 0;
     right: 0;
+    left: 100;
     margin: 20px;
     color: rgb(223, 216, 216);
+    margin-top: 50px;
 
 
 }
+
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -29,6 +32,7 @@ body{
     background-attachment: fixed;
     background-color: #131212; 
     color: #F8F8F8;
+   
 
 }
 
@@ -42,6 +46,7 @@ body{
     padding: 20px; 
     box-sizing: border-box; 
     position: relative; 
+   
 
 }
 
@@ -57,27 +62,33 @@ body{
     position: relative;  
     border: 1px solid #979797;  
     border-radius: 10px;
+    margin-top: 70px;
 }
 .slick-slide {
-    font-size: 30px;
+    font-size: 50px;
     font-family: Arial, sans-serif; 
     
 }
 
-
-.logo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-  
-    height: 80px;
-    width: auto
- 
-    
-   
+.left{
+    margin-top: 50px;
 }
+.right{
+    margin-top: 50px;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: left;
+    border-radius: 50%;
+    height: 100px;
+    width: auto;
+    margin: 7px;
+}
+
 
 h3 {
     display: flex;
@@ -94,10 +105,16 @@ h3 {
 .navbar {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 100px;
     background-color: #131212;
     padding: 10px;
     margin: 20px;
+    margin-top: 50px;
+    
+}
+.navbar-hide {
+    top: -100px;
+    transition: top 0.3s;
 }
 
 .navbar a {
@@ -118,6 +135,7 @@ h3 {
 .container {
     display: flex;
     justify-content: center;
+  margin-top: 250px;
 }
 
 .vid {
@@ -133,6 +151,16 @@ h3 {
     top: 10px;  /* adjust as needed */
     right: 10px;
 }
+.money{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.norm{
+    font-size: 50px;
+}
 
 
 h2 {
@@ -140,9 +168,10 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, red, blue) ;
+    background: linear-gradient(to right,white, rgb(4, 226, 89)) ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 240px;
  
     
  
@@ -340,10 +369,13 @@ footer {
     box-shadow: 0px 0px 10px 0px rgba(51, 105, 92, 0.75);
  
     cursor: pointer;
-    background: linear-gradient(to right, #1d1d1d 50%, rgb(67, 128, 99) 50%);
+    background: linear-gradient(to right, #1d1d1d 50%, rgb(54, 199, 119) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.5s ease-out;
+    margin-top: 50px;
+
+    padding: 15px 30px;
 }
 .spacing:hover {
     background-position: left bottom;
@@ -392,20 +424,21 @@ section {
 .button-container {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 1000px !important;
 
 }
 
 
 html {
     scroll-behavior: smooth;
-    cursor: none;
+    
 }
 
 .cards-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 }
 
 .card-row {
@@ -425,13 +458,17 @@ html {
     width: 40%; /* adjust as needed */
 }
 
+.discovery{
+    font-size: 40px;
+}
+
 .card-text2{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
-    margin-top: 80px;
+    margin-top: 30px;
     font-size: 21px;
     color: #808080;
 }
@@ -472,13 +509,9 @@ html {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
-    
-    font-size: 21px;
-    background: linear-gradient(45deg, rgb(0, 255, 200), rgb(0, 255, 106));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  
+   font-size: 20px;
+   color: #808080;
+   margin-top: -75px;
 }
 
 .home{
@@ -486,12 +519,12 @@ html {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
   
-    font-size: 21px;
     background: linear-gradient(45deg, rgb(0, 238, 186), rgb(9, 255, 1));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-top: 30px;
+    font-size: 70px;
   
 }
 .home2{
@@ -499,59 +532,50 @@ html {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
-   
-    font-size: 21px;
-    background: linear-gradient(45deg, rgb(0, 255, 200), rgb(0, 255, 106));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   
+    color: #808080;
+    margin-top: 150px;
 }
 
-.pcontainer{
+.svg-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin-top: 80px;
-    font-size: 21px;
-    color: #ececec;
+    margin-top: -50px;
+  }
+
+.line {
+    height: 2px; /* thickness of the line */
+    background-color: #69b390; /* color of the line */
+    width: 20%; /* width of the line */
+    border-radius: 50%;
+  }
+
+
+
+
+.Socials {
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the start of the container */
+    margin-top: -70px;
 }
 
-
-.Socials{
-    margin-top: 10px;
-
+.Socials a i {
+    font-size: 30px; /* Adjust as needed */
+    margin-right: 30px; /* Adjust as needed */
 }
 
 @import url('https://fonts.googleapis.com/css?family=Anton');
 
-.cursor {
-  left: 0;
-  top: 0;
-  width: 10px;
-  height: 10px;
-  background-color: #f44336;
-  position: fixed;
-  border-radius: 5px;
-  z-index: 9999;
-}
 
-.cursor__follower {
-  transition: transform .4s;
-  width: 6px;
-  height: 6px;
-  z-index: 9998;
-  position: fixed;
-}
+
 
 h4{
     color: #808080;
 }
   
 .para{
-    font-size: smaller;
+    font-size: 20px;
 }
 
 

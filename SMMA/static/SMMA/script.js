@@ -26,27 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // cursor
 
-const root = document.querySelector('html')
-
-// Real cursor element
-const cursor = document.createElement('div')
-cursor.classList.add('cursor')
-root.appendChild(cursor)
-
-// Following extra cursor element
-const follower = document.createElement('div')
-follower.classList.add('cursor', 'cursor__follower')
-root.appendChild(follower)
-
-
-root.addEventListener('mousemove', (e) => {
-  setPosition(follower, e)
-  setPosition(cursor, e)
-})
-
-function setPosition(element, e) {
-  element.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`
-}
 
 // paralaxx
 
@@ -93,3 +72,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const animateElements = document.querySelectorAll(".animate, .animate2 .left, .animate3 .right");
     animateElements.forEach((el) => observer.observe(el));
   });
+
+
+  // hide nav
+
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (currentScrollPos === 0) { // Check if user is at the top of the page
+      document.querySelector(".navbar").style.top = "0";
+    } else {
+      document.querySelector(".navbar").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
