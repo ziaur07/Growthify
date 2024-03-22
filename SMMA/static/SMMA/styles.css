@@ -1,3 +1,5 @@
+
+
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -279,6 +281,10 @@ h2 {
     flex-wrap: wrap;
     
 }
+.service-cards .card, .service-cards .card2, .service-cards .card4 {
+    flex: 1 0 0;
+    margin: 0 10px; /* Add some margin to separate the cards */
+}
 
 
 
@@ -304,13 +310,16 @@ h2 {
 .faq-question {
     cursor: pointer;
     text-align: left !important;
+    font-family: sans-serif;
+    font-size: 25px;
 }
 
 .faq-answer {
     display: none;
     text-align: left;
-    font-size: smaller;
-    line-height: 1.75rem;
+    font-size: 20px;
+    line-height: 2;
+    margin: 10px 0;
 }
 
 .faq-container {
@@ -402,6 +411,7 @@ footer {
 .card2{
     position: relative;
     transition: transform 0.3s ease-in-out;
+    
   }
   .card2:hover {
     transform: translateY(-10px); /* Add this block */
@@ -441,6 +451,8 @@ html {
     margin-top: 50px;
 }
 
+
+
 .card-row {
     display: flex;
     justify-content: space-between;
@@ -448,8 +460,37 @@ html {
     margin-bottom: 20px;
 }
 
+.card-containerN {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cardN {
+    border: 1px solid rgb(184, 184, 184); /* Adjust as needed */
+    box-sizing: border-box;
+    flex: 1;
+    margin: 10px; /* Adjust as needed */
+    border-radius: 10px; 
+  }
+  #cardn1 {
+    height: 520px; /* Adjust as needed */
+    margin-top: 200px;
+  }
+  
+  #cardn2 {
+    height: 820px; /* Adjust as needed */
+  }
+  
+  #cardn3 {
+    height: 650px; /* Adjust as needed */
+    margin-top: 150px;
+  }
+
+
+
 .card {
-    width: 45%;
+    width: 45%;  /* Adjust as needed */
+    
 }
 
 .right {
@@ -460,6 +501,31 @@ html {
 
 .discovery{
     font-size: 40px;
+}
+
+.card-title{
+    font-size: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center
+    
+    
+}
+
+#Traditional{
+    margin-top: 0px;
+
+}
+
+#diff{
+    margin: 10px 0;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.card-text{
+    font-size: 300px;
+
 }
 
 .card-text2{
@@ -487,15 +553,18 @@ html {
 
 .cardg{
     border: 1px solid #f8f5f5;
-    font-size: 15px;
+    font-family: sans-serif;
+    font-size: 25px;
     width: 200px; /* Set a specific width */
     height: 300px; /* Set a specific height */
     overflow: auto;
     border-radius: 10px;
     transition: background-color 0.3s ease-in-out;
+    margin: 20px 0;
 }
 .cardg:hover {
     background-color: rgb(89, 151, 113); /* Replace #yourHoverColor with your desired hover color */
+    color: #030303;
   }
 
 .gradient-text {
@@ -598,14 +667,54 @@ h4{
   }
 
   .btn{
-    color: #808080;
-    background-color: #131313;
-    border: 2px solid #808080;;
+    color: #030303;
+    background-color: #ffffff;
+    border: 2px solid #474747;
+    width: 600px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    height: 50px;
+   
+  }
+
+  #btn1 {
+    margin-top: 0px; /* Adjust as needed */
+  }
+  
+  #btn2 {
+    margin-top: 60px; /* Adjust as needed */
+  }
+  
+  #btn3 {
+    margin-top: 40px; /* Adjust as needed */
   }
 
   .btn:hover {
-    background-color: gray;/* Change this to your desired hover color */
+    background-color: rgb(6, 224, 123);/* Change this to your desired hover color */
   }
+
+  #keypoints {
+    font-size: 17px; 
+    margin: 40px 0;
+    font-family: Arial, sans-serif;
+  }
+.card-titleN{
+    font-size: 40PX;
+    margin: 30PX;
+}
+#pro{
+    text-align: right;
+   
+    border-radius: 15px;
+    margin: 15px;
+    font-size: 40px;
+}
+
+
+
 
 .arrow{
     text-align: right;

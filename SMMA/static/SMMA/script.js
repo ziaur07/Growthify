@@ -86,3 +86,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     prevScrollpos = currentScrollPos;
   }
+
+
+  //loader
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+      document.getElementById('mySvg').style.display = 'none';
+    }, 2000);
+  });
