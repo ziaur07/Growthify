@@ -6,22 +6,56 @@
     font-size: 20px;
     text-align: center;
     text-decoration: none;
-    background-color: #013126c5;
+    background-color: #6b6b6bc5;
    
-    border-radius: 10px;
+    border-radius: 12px;
     border: none;
     cursor: pointer;
     position: absolute;
     top: 0;
     right: 0;
     left: 100;
-    margin: 20px;
+    margin: 40px;
     color: rgb(223, 216, 216);
     margin-top: 50px;
 
 
 }
+a:hover {
+    color: rgb(24, 24, 24); /* Replace with your desired color */
+  }
 
+.Growthify{
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+}
+.hcontainers{
+    margin-top: -60px;
+
+}
+
+.grow {
+    background: linear-gradient(to right,white, rgb(4, 226, 89)) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .homeN{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .spacing:hover {
+    transform: translateY(-15px); 
+  }
+
+  .highlight {
+    background: linear-gradient(to right,white, rgb(4, 226, 89)) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -67,7 +101,7 @@ body{
     margin-top: 70px;
 }
 .slick-slide {
-    font-size: 50px;
+    font-size: 40px;
     font-family: Arial, sans-serif; 
     
 }
@@ -75,20 +109,23 @@ body{
 .left{
     margin-top: 50px;
 }
+#DIS{
+    margin-top: 100px;
+
+}
 .right{
     margin-top: 50px;
 }
 
 .logo {
-    position: absolute;
-    top: 0;
-    left: 0;
+
     display: flex;
-    justify-content: left;
-    border-radius: 50%;
-    height: 100px;
-    width: auto;
-    margin: 7px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px !important;
+    font-family: sans-serif;
+    margin-top: -15px;
+    
 }
 
 
@@ -107,11 +144,12 @@ h3 {
 .navbar {
     position: fixed;
     top: 0;
-    left: 100px;
+    left: 20px;
     background-color: #131212;
     padding: 10px;
     margin: 20px;
     margin-top: 50px;
+    font-size: larger;
     
 }
 .navbar-hide {
@@ -158,26 +196,32 @@ h3 {
     display: flex;
     align-items: center;
     margin-top: 50px;
+    color: #00ffbf;
 }
 
 .norm{
     font-size: 50px;
-}
-
-
-h2 {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: linear-gradient(to right,white, rgb(4, 226, 89)) ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 240px;
- 
-    
- 
-    
+    margin-top: 80px;
+}
+#operate{
+    margin-left: -20px;
+}
+
+h2 {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to right,white, rgb(4, 226, 89)) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
 }
 
 #test {
@@ -342,14 +386,23 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    border-top: 1px solid #f8f5f5; /* Add this line */
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    left: 10%; /* Center the border */
+    top: 0;
+    height: 1px;
+    width: 80%;
+    background: #f8f5f5;
 }
 
 
 .hook{
     display: flex;
     justify-content: center;
-    
+    font-size: larger;
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
@@ -370,19 +423,22 @@ footer {
 .spacing {
     margin-right: 20px;
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 2px solid rgb(36, 36, 36);
     color: white;
     text-align: center;
     transition: 0.5s;
     box-shadow: 0px 0px 10px 0px rgba(51, 105, 92, 0.75);
+    font-size: larger;
  
     cursor: pointer;
     background: linear-gradient(to right, #1d1d1d 50%, rgb(54, 199, 119) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.5s ease-out;
-    margin-top: 50px;
+    margin-top: 2
+    
+    0px;
 
     padding: 15px 30px;
 }
@@ -578,9 +634,10 @@ html {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-   font-size: 20px;
-   color: #808080;
-   margin-top: -75px;
+   font-size: 18px;
+   color: #cacaca;
+   margin-top: 50px;
+  
 }
 
 .home{
@@ -602,8 +659,10 @@ html {
     align-items: center;
     flex-wrap: wrap;
   
-    color: #808080;
+    color: #cacaca;
     margin-top: 150px;
+    font-size: 20PX;
+    margin-bottom: 50px;
 }
 
 .svg-container {
@@ -645,6 +704,9 @@ h4{
   
 .para{
     font-size: 20px;
+    line-height: 1.6; /* Adjust as needed */
+    word-spacing: 0.2em; /* Adjust as needed */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -670,22 +732,22 @@ h4{
     color: #030303;
     background-color: #ffffff;
     border: 2px solid #474747;
-    width: 600px; 
+    width: 500px; 
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
     border-radius: 15px;
-    height: 50px;
+    height: 35px;
    
   }
 
   #btn1 {
-    margin-top: 0px; /* Adjust as needed */
+    margin-top: 60px; /* Adjust as needed */
   }
   
   #btn2 {
-    margin-top: 60px; /* Adjust as needed */
+    margin-top: 80px; /* Adjust as needed */
   }
   
   #btn3 {
